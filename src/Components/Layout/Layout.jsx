@@ -1,7 +1,7 @@
-// import { Outlet, useLocation } from 'react-router-dom';
+
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
-import Footer from '../Shared/Footer/Footer';
+import Navbar from '../Shared/UserShared/Navbar/Navbar';
+import Footer from '../Shared/UserShared/Footer/Footer';
 
 const Layout = () => {
 
@@ -15,9 +15,9 @@ const Layout = () => {
         {/* { noHeaderFooter || <Navbar/> }
         <Outlet/>
         { noHeaderFooter || <Footer/> } */}
-         <Navbar/> 
+         <Navbar /> 
         <Outlet/>
-        <Footer/> 
+        <Footer /> 
         </div>
     );
 };

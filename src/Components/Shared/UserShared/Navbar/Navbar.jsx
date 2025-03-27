@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import mainIcon from "../../../assets/Icons/SkyScape-Logo.png";
-import menuIcon from "../../../assets/Icons/menu.png";
+import mainIcon from "../../../../assets/Icons/SkyScape-Logo.png";
+import menuIcon from "../../../../assets/Icons/menu.png";
 import { useState } from "react";
 
 const userNavUl = [
@@ -34,10 +34,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav style={{ fontFamily: "Barlow, sans-serif " }}>
-      <div className="lg:max-w-6xl md:max-w-3xl sm: w-full  mx-auto">
+    <nav style={{ fontFamily: "Barlow, sans-serif " }} className=" relative z-50">
+      <div className=" lg:max-w-6xl md:max-w-3xl sm: w-full  mx-auto ">
         {/*/ ******************************* navlist for large & medium device  ******************************* */}
-        <div className="md:flex justify-between items-center sm: hidden py-3 px-2">
+        <div className="md:flex justify-between items-center sm: hidden py-3 px-2 ">
           {/* ------------------ icon section ------------------ */}
           <div>
             <div className="relative flex items-center">
@@ -45,14 +45,14 @@ const Navbar = () => {
                 SkyScape
               </h1>
               <img src={mainIcon} alt="" className="w-[60px]" />
-              <p className="absolute top-9 left-14 text-[10px] font-semibold text-white">
+              <p className="absolute top-9 left-10 text-[10px] font-semibold text-white">
                 explore the world
               </p>
             </div>
           </div>
           {/* ------------------ ul li section ------------------ */}
           <div>
-            <ul className="flex gap-10 ">
+            <ul className="flex gap-10 mt-3">
               {userNavUl.map(({ path, title }, index) => (
                 <Link key={index} to={path}>
                   <li className="text-white hover:text-blue-500 hover:border-blue-500 hover:border-b-2 uppercase font-semibold text-xs">
@@ -63,7 +63,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <hr />
+        <hr className="opacity-10"/>
         {/* ******************************* navlist for small device ******************************* */}
         <div className="sm: flex justify-between items-center md:hidden py-3 px-2">
           {/* ------------------ icon section ------------------ */}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 SkyScape
               </h1>
               <img src={mainIcon} alt="" className="w-[60px]" />
-              <p className="absolute top-9 left-14 text-[10px] font-semibold text-white">
+              <p className="absolute top-9 left-10 text-[10px] font-semibold text-white">
                 explore the world
               </p>
             </div>
@@ -88,17 +88,18 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <hr />
         {navOpen ? (
-          <ul className="block text-center gap-10 bg-gray-700 py-4">
+            <div className="flex justify-center" >
+          <ul className="text-center gap-10 bg-white py-4 w-[350px] absolute top-full z-50">
             {userNavUl.map(({ path, title }, index) => (
               <Link key={index} to={path}>
-                <li className="text-white hover:text-blue-500 hover:border-blue-500 hover:border-b-2 uppercase font-semibold leading-10 ">
+                <li className="text-black hover:text-blue-500 hover:border-blue-500 hover:border-b-2 uppercase font-semibold leading-10 ">
                   {title}
                 </li>
               </Link>
             ))}
           </ul>
+            </div>
         ) : (
           <></>
         )}
