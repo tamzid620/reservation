@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav style={{ fontFamily: "Barlow, sans-serif " }} className=" relative z-50">
       <div className=" lg:max-w-6xl md:max-w-3xl sm: w-full  mx-auto ">
-        {/*/ ******************************* navlist for large & medium device  ******************************* */}
+        {/*/  NAVLIST FOR LARGE AND MEDIUM DEVICE  ************************************************************** */}
         <div className="md:flex justify-between items-center sm: hidden py-3 px-2 ">
           {/* ------------------ icon section ------------------ */}
           <div>
@@ -55,7 +55,7 @@ const Navbar = () => {
             <ul className="flex gap-10 mt-3">
               {userNavUl.map(({ path, title }, index) => (
                 <Link key={index} to={path}>
-                  <li className="text-white hover:text-blue-500 hover:border-blue-500 hover:border-b-2 uppercase font-semibold text-xs">
+                  <li className="text-white hover:text-blue-500 uppercase font-semibold text-xs">
                     {title}
                   </li>
                 </Link>
@@ -64,7 +64,10 @@ const Navbar = () => {
           </div>
         </div>
         <hr className="opacity-10"/>
-        {/* ******************************* navlist for small device ******************************* */}
+
+
+        
+        {/*  NAVLIST FOR SMALL DEVICE ************************************************************** */}
         <div className="sm: flex justify-between items-center md:hidden py-3 px-2">
           {/* ------------------ icon section ------------------ */}
           <div>
@@ -93,7 +96,7 @@ const Navbar = () => {
           <ul className="text-center gap-10 bg-white py-4 w-[350px] absolute top-full z-50">
             {userNavUl.map(({ path, title }, index) => (
               <Link key={index} to={path}>
-                <li className="text-black hover:text-blue-500 hover:border-blue-500 hover:border-b-2 uppercase font-semibold leading-10 ">
+                <li className="text-black hover:text-blue-500 uppercase font-semibold leading-10 ">
                   {title}
                 </li>
               </Link>

@@ -33,7 +33,7 @@ const Banner = () => {
         />
       </div>
       <div className="bg-black opacity-40 absolute inset-0 z-0" />
-      {/*  ********************************* title section ********************************* */}
+      {/*  TITLE SECTION  **************************************************************** */}
       <div className="text-white absolute flex justify-center items-center text-center z-10 inset-0">
         <div>
           <h2 style={{ fontFamily: "Barlow, sans-serif " }} className="md:text-lg sm: text-sm uppercase md:tracking-[0.4em] sm: tracking-[0.2em] mb-5">
@@ -44,6 +44,10 @@ const Banner = () => {
              With <span className="bannertext">SkyScape</span>
           </h1>
         </div>
+      </div>
+      {/* TOUR SELECTION SECTION **************************************************************  */}
+      <div>
+
       </div>
     </div>
   );
