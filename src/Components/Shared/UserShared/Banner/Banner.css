@@ -3,17 +3,24 @@
   -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
-/* top , right&left , bottom */
 
 select {
   background-color: white !important;
   color: black !important;
-  padding: 17px 20px 18px; 
-  border: .5px solid gainsboro;
+  padding: 17px 20px 18px;
+  border: 0.5px solid gainsboro;
 }
 
-
-input[type="date"] {
-  background-color: white !important;
-  color: black !important;
+@media only screen and (max-width: 768px) {
+    .tour-div{
+        width: 100%;
+        /* left: 0 ; */
+    }
+  select {
+    padding: 17px 0px 18px;
+  }
+  .date-div {
+    width: 22% !important ;
+  }
+ 
 }

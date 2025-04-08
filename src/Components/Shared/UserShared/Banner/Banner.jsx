@@ -57,10 +57,10 @@ const Banner = () => {
           </h1>
         </div>
         {/* TOUR SELECTION SECTION **************************************************************  */}
-        <div className="absolute bottom-60 backdrop-blur-2xl px-5 py-5 ">
+        <div className="absolute bottom-52 backdrop-blur-2xl px-5 py-5 tour-div">
           <form
             style={{ fontFamily: "Barlow, sans-serif " }}
-            className="  px-5 py-3 flex items-center"
+            className="px-5 py-3 flex items-center"
           >
             {/* Tour Type  */}
             <div>
@@ -91,7 +91,7 @@ const Banner = () => {
               </select>
             </div>
             {/*  Start Date */}
-            <div className="relative bg-white">
+            <div className="relative bg-white date-div">
               <label
                 htmlFor="start-date"
                 className="absolute text-black rounded-sm text-sm left-3 top-[-10px] bg-gray-100 shadow-md px-1 z-10"
@@ -101,11 +101,11 @@ const Banner = () => {
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
-                className=" px-5 py-4  border bg-transparent text-black "
+                className="px-5 py-4  border bg-transparent text-black "
               />
             </div>
             {/*  End Date */}
-            <div className="relative bg-white">
+            <div className="relative bg-white date-div">
               <label
                 htmlFor="end-date"
                 className="absolute text-black rounded-sm text-sm left-3 top-[-10px] bg-gray-100 shadow-md px-1 z-10"
@@ -120,12 +120,10 @@ const Banner = () => {
             </div>
 
             {/* find now button  */}
-            <button className="w-full flex items-center justify-center gap-2 px-10 py-[13px] bg-[#3674B5]
-            hover:bg-[#20364d]">
-              <span>
+            <button className="find-button flex items-center justify-center gap-2 lg:px-10 md:px-5 lg:py-[13px] md:py-[14px] bg-[#3674B5]
+            hover:bg-[#20364d] z-10 ">
                 <img src={searchIcon} alt="search icon" className="w-8" />
-              </span>
-              <span>Find Now</span>
+              <p className="">Find Now</p>
             </button>
           </form>
         </div>
