@@ -168,7 +168,7 @@ const Banner = () => {
             </select>
           </div>
           {/*  Start Date */}
-          <div className="relative bg-white mb-5">
+          <div className="relative bg-white mb-5 rounded-sm">
             <label
               htmlFor="start-date"
               className="absolute text-black rounded-sm text-sm left-3 top-[-10px] bg-gray-100 shadow-md px-1 z-10"
@@ -182,7 +182,7 @@ const Banner = () => {
             />
           </div>
           {/*  End Date */}
-          <div className="relative bg-white">
+          <div className="relative bg-white rounded-sm">
             <label
               htmlFor="end-date"
               className="absolute text-black rounded-sm text-sm left-3 top-[-10px] bg-gray-100 shadow-md px-1 z-10"
@@ -196,7 +196,7 @@ const Banner = () => {
             />
           </div>
           {/* find now button  */}
-          <button className="w-full flex items-center justify-center gap-2 mt-5 px-10 py-2 bg-[#3674B5] hover:bg-[#20364d] text-white"
+          <button className="w-full flex items-center justify-center gap-2 mt-5 px-10 py-2 bg-[#3674B5] hover:bg-[#20364d] text-white rounded-sm"
           >
             <img src={searchIcon} alt="search icon" className="w-8" />
             <p className="">Find Now</p>

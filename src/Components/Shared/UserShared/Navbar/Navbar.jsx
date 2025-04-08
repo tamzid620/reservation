@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import mainIcon from "../../../../assets/Icons/SkyScape-Logo.png";
+// import mainIcon from "../../../../assets/Icons/SkyScape-Logo.png";
+import mainIcon from "../../../../assets/Icons/skyscape-removebg.png";
 import menuIcon from "../../../../assets/Icons/menu.png";
 import { useState } from "react";
 
@@ -34,8 +35,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav style={{ fontFamily: "Barlow, sans-serif " }} className=" relative z-50">
-      <div className=" lg:max-w-6xl md:max-w-3xl sm: w-full  mx-auto ">
+    <nav style={{ fontFamily: "Barlow, sans-serif " }} className="fixed top-0 left-0 w-full md:shadow-none sm: shadow-md z-50">
+      <div className=" lg:max-w-6xl md:max-w-3xl sm: w-full  mx-auto  ">
         {/*/  NAVLIST FOR LARGE AND MEDIUM DEVICE  ************************************************************** */}
         <div className="md:flex justify-between items-center sm: hidden py-3 px-2 ">
           {/* ------------------ icon section ------------------ */}
@@ -44,8 +45,8 @@ const Navbar = () => {
               <h1 className="relative text-2xl font-extrabold uppercase text-white">
                 SkyScape
               </h1>
-              <img src={mainIcon} alt="" className="w-[60px]" />
-              <p className="absolute top-9 left-10 text-[10px] font-semibold text-white">
+              <img src={mainIcon} alt="" className="w-[70px]" />
+              <p className="absolute top-8 left-10 text-[10px] font-semibold text-white">
                 explore the world
               </p>
             </div>
@@ -66,9 +67,8 @@ const Navbar = () => {
         <hr className="opacity-10"/>
 
 
-        
         {/*  NAVLIST FOR SMALL DEVICE ************************************************************** */}
-        <div className="sm: flex justify-between items-center md:hidden py-3 px-2">
+        <div className="sm: flex justify-between items-center md:hidden py-3 px-2 ">
           {/* ------------------ icon section ------------------ */}
           <div>
             <div className="relative flex items-center">
@@ -76,7 +76,7 @@ const Navbar = () => {
                 SkyScape
               </h1>
               <img src={mainIcon} alt="" className="w-[60px]" />
-              <p className="absolute top-9 left-10 text-[10px] font-semibold text-white">
+              <p className="absolute top-7 left-10 text-[10px] font-semibold text-white">
                 explore the world
               </p>
             </div>
