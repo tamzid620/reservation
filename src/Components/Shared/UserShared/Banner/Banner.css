@@ -12,10 +12,7 @@ select {
 }
 
 @media only screen and (max-width: 768px) {
-    .tour-div{
-        width: 100%;
-        /* left: 0 ; */
-    }
+  
   select {
     padding: 17px 0px 18px;
   }

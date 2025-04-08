@@ -39,7 +39,8 @@ const Banner = () => {
         />
       </div>
       <div className="bg-black opacity-40 absolute inset-0 z-0" />
-      <div className="text-white absolute flex justify-center items-center text-center z-10 inset-0">
+      <div className="text-white  absolute mt-48 flex justify-center items-center text-center z-10 inset-0">
+        <div>
         {/*  TITLE SECTION  **************************************************************** */}
         <div>
           <h2
@@ -57,10 +58,9 @@ const Banner = () => {
           </h1>
         </div>
         {/* TOUR SELECTION SECTION **************************************************************  */}
-        <div className="absolute bottom-52 backdrop-blur-2xl px-5 py-5 tour-div">
           <form
             style={{ fontFamily: "Barlow, sans-serif " }}
-            className="px-5 py-3 flex items-center"
+            className=" mt-5 backdrop-blur-2xl lg:px-5 py-5 flex items-center justify-center "
           >
             {/* Tour Type  */}
             <div>
@@ -118,7 +118,6 @@ const Banner = () => {
                 className=" px-5 py-4  border bg-transparent text-black "
               />
             </div>
-
             {/* find now button  */}
             <button className="find-button flex items-center justify-center gap-2 lg:px-10 md:px-5 lg:py-[13px] md:py-[14px] bg-[#3674B5]
             hover:bg-[#20364d] z-10 ">
