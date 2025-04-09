@@ -60,13 +60,13 @@ const sliderData = [
 const PopularDestination = () => {
   const sliderRef = useRef(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      sliderRef.current.slickNext();
-    }, 2000);
+//   useEffect(() => {
+//     const intervalId = setInterval(() => {
+//       sliderRef.current.slickNext();
+//     }, 2000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+//     return () => clearInterval(intervalId);
+//   }, []);
 
   const settings = {
     dots: true,
@@ -131,7 +131,7 @@ const PopularDestination = () => {
                   alt={location}
                   className="w-full h-[500px] transition-transform duration-500 group-hover:scale-105 bg-black mx-4"
                 />
-                <div className="bg-black opacity-0 group-hover:opacity-30 absolute inset-0 z-0 " />
+                <div className="bg-black opacity-0 group-hover:opacity-20 absolute inset-0 z-0 " />
                 <div className="absolute top-3 right-3 bg-[#578FCA] text-white px-3 py-1 rounded-md font-semibold text-sm">
                   {tours}
                 </div>
