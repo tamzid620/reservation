@@ -74,7 +74,7 @@ const Navbar = () => {
             <ul className="flex gap-10 mt-3">
               {userNavUl.map(({ path, title }, index) => (
                 <Link key={index} to={path}>
-                  <li className="text-white hover:text-blue-500 uppercase font-semibold text-xs">
+                  <li className="text-white hover:text-[#A1E3F9] uppercase font-semibold text-xs">
                     {title}
                   </li>
                 </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
           <ul className="text-center gap-10 bg-white py-4 w-[350px] absolute top-full z-50">
             {userNavUl.map(({ path, title }, index) => (
               <Link key={index} to={path}>
-                <li className="text-black hover:text-blue-500 uppercase font-semibold leading-10 ">
+                <li className="text-black hover:text-[#A1E3F9] uppercase font-semibold leading-10 ">
                   {title}
                 </li>
               </Link>
