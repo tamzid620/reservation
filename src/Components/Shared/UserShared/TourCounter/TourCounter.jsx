@@ -32,8 +32,8 @@ const counterData = [
 const TourCounter = () => {
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // animation triggers only once
-    threshold: 0.3,     // how much of the component should be visible before triggering
+    triggerOnce: true, 
+    threshold: 0,     
   });
 
   return (
