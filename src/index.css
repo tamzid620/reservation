@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    /* background-color: white; */
-    color: black ;
-}
+
+body {
+    background-image: url('./assets/Images/background-body-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+  }

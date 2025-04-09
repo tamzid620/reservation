@@ -7,7 +7,7 @@ const DiscoverWorld = () => {
   return (
     <div
       style={{ fontFamily: "Barlow, sans-serif " }}
-      className="bg-gray-100 py-44"
+      className="bg-gray-100 text-black py-44"
     >
       <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-8 sm: mx-5">
         {/* =============================== INFORMATION SECTION =-===================== */}
