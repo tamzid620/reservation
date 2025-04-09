@@ -3,33 +3,42 @@ import airplaneLogo from "../../../../assets/Icons/airplane.png";
 import houseLogo from "../../../../assets/Icons/house.png";
 import shipLogo from "../../../../assets/Icons/cruise.png";
 import ticketLogo from "../../../../assets/Icons/ticket.png";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const counterData = [
   {
     logo: airplaneLogo,
-    number: "600",
+    number: 600,
     title: "Flight Booking",
   },
   {
     logo: houseLogo,
-    number: "360",
+    number: 360,
     title: "Amazing Tour",
   },
   {
     logo: shipLogo,
-    number: "240",
+    number: 240,
     title: "Cruises Booking",
   },
   {
     logo: ticketLogo,
-    number: "120",
+    number: 120,
     title: "Hotel Booking",
   },
 ];
 
 const TourCounter = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, // animation triggers only once
+    threshold: 0.3,     // how much of the component should be visible before triggering
+  });
+
   return (
     <div
+    ref={ref}
       style={{ fontFamily: "Barlow, sans-serif " }}
       className="relative py-32 text-white"
     >
@@ -44,11 +53,19 @@ const TourCounter = () => {
                   <img src={logo} alt="logo" className="" />
                 </div> */}
                 <div className="relative w-24 h-24  ms-5">
-  <div className="w-full h-full bg-white opacity-30 p-5 rounded-full"></div>
-  <img src={logo} alt="logo" className="absolute inset-0 m-auto z-10 w-14" />
-</div>
+                  <div className="w-full h-full bg-white opacity-30 p-5 rounded-full"></div>
+                  <img
+                    src={logo}
+                    alt="logo"
+                    className="absolute inset-0 m-auto z-10 w-14"
+                  />
+                </div>
 
-                <h1 className="my-2 text-3xl font-semibold">{number}</h1>
+                <h1 className="my-2 text-3xl font-semibold">
+                {inView && 
+                <CountUp start={0} end={number} duration={3}  />
+                }
+                </h1>
                 <h2 className="text-xl font-semibold">{title}</h2>
               </div>
             </div>
