@@ -29,13 +29,13 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="-mt-[85px] relative">
+      <div className="-mt-[85px] relative bg-black">
         <div className=" w-full h-screen overflow-hidden">
           <img
             src={imgData[currentIndex]}
             alt="Banner"
-            className={`w-full h-screen object-cover transition-opacity duration-600 ${
-              fade ? "opacity-100" : "opacity-50"
+            className={`w-full h-screen  object-cover transition-opacity duration-600 ${
+              fade ? "opacity-100 " : "opacity-50"
             }`}
           />
         </div>
@@ -134,10 +134,10 @@ const Banner = () => {
         </div>
       </div>
       {/* small device tour selection div ----------------------------------------------------- */}
-      <div className="md:hidden sm: flex items-center justify-center">
+      <div className="md:hidden sm: flex items-center justify-center backdrop-blur-2xl">
         <form
           style={{ fontFamily: "Barlow, sans-serif " }}
-          className=" mt-5 backdrop-blur-2xl lg:px-5 py-5 "
+          className=" mt-5  lg:px-5 py-5 "
         >
           {/* Tour Type  */}
           <div>
