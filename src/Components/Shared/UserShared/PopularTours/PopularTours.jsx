@@ -1,5 +1,4 @@
 import React from "react";
-import "./PopularTours.css";
 import tourImage1 from "../../../../assets/Images/tour-Maldives.jpg";
 import tourImage2 from "../../../../assets/Images/tour-Rome.jpg";
 import tourImage3 from "../../../../assets/Images/tour-Greece.jpg";
@@ -100,14 +99,14 @@ const PopularTours = () => {
                 alt={tour.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 bg-black"
               />
-              <div className="bg-black opacity-30 absolute inset-0 z-0 " />
+              <div className="bg-black opacity-0 group-hover:opacity-30 absolute inset-0 z-0 " />
               <div className="absolute top-3 right-3 bg-[#578FCA] text-white px-3 py-1 rounded-md font-semibold text-sm">
                 {tour.price}
               </div>
-              <div className="absolute bottom-3 left-3 text-white font-semibold drop-shadow-md">
+              <div className="absolute bottom-3 left-3 text-white font-semibold drop-shadow-md opacity-0 group-hover:opacity-100">
                 <p className="text-xl">{tour.title}</p>
                 <hr />
-                <div className="flex gap-3 text-lg mt-2">
+                <div className="flex gap-3 text-lg mt-2 ">
                   <p className="flex items-center gap-1"><FaRegClock />{tour.duration}</p>
                   <p className="flex items-center gap-1"><GoPerson />{tour.person}</p>
                   <p className="flex items-center gap-1"><IoLocationOutline />{tour.location}</p>
