@@ -1,4 +1,3 @@
-import React from "react";
 import tourImage1 from "../../../../assets/Images/tour-Maldives.jpg";
 import tourImage2 from "../../../../assets/Images/tour-Rome.jpg";
 import tourImage3 from "../../../../assets/Images/tour-Greece.jpg";
@@ -71,7 +70,7 @@ const PopularTours = () => {
   return (
     <div
       style={{ fontFamily: "Barlow, sans-serif " }}
-      className="bg-gray-200 text-black py-20"
+      className="bg-gray-200 text-black py-32"
     >
       <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-8 sm: mx-5">
         {/* = INFORMATION SECTION =-=================================================== */}

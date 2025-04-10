@@ -3,6 +3,8 @@ import DiscoverWorld from "../../Shared/UserShared/DiscoverWorld/DiscoverWorld";
 import PopularDestination from "../../Shared/UserShared/PopularDestination/PopularDestination";
 import PopularTours from "../../Shared/UserShared/PopularTours/PopularTours";
 import TourCounter from "../../Shared/UserShared/TourCounter/TourCounter";
+import TourCountries from "../../Shared/UserShared/TourCountries/TourCountries";
+import VideoCompo from "../../Shared/UserShared/VideoCompo/VideoCompo";
 
 
 const Home = () => {
@@ -13,6 +15,8 @@ const Home = () => {
            <PopularTours/>
            <TourCounter/>
            <PopularDestination/>
+           <VideoCompo/>
+           <TourCountries/>
         </div>
     );
 };

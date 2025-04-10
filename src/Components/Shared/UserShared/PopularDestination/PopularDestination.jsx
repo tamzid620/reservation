@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import "./PopularDestination.css";
 import sliderImage1 from "../../../../assets/Images/Slider-Italy.jpg";
 import sliderImage2 from "../../../../assets/Images/Slider-Japan.jpg";
@@ -104,7 +104,7 @@ const PopularDestination = () => {
   return (
     <div
       style={{ fontFamily: "Barlow, sans-serif " }}
-      className="bg-gray-200 text-black py-20"
+      className="bg-gray-200 text-black py-32"
     >
       <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-8 sm: mx-5">
         {/* = INFORMATION SECTION =-=================================================== */}
