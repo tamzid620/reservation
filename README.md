@@ -6,7 +6,7 @@ color -1: #3674B5 ;
 color -2: #578FCA ;
 color -3: #A1E3F9 ;
 color -4: #D1F8EF ;
-color -5: #20364d  ( Navy Blue ) ;
+color -5: #172554   ( Navy Blue ) ;
 
 <!-- style list  -->
 

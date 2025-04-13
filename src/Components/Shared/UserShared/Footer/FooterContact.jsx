@@ -27,7 +27,7 @@ const FooterContact = () => {
       style={{ fontFamily: "Barlow, sans-serif " }}
       className="relative py-32 text-white"
     >
-      <div className="bg-black opacity-80 absolute inset-0 z-0" />
+      <div className="bg-black opacity-50 absolute inset-0 z-0" />
       {/* information section  */}
       <div className="relative z-10 lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-8 sm: mx-5 border p-8">
         {/* = INFORMATION SECTION =-=================================================== */}
@@ -42,8 +42,8 @@ const FooterContact = () => {
                 <img src={icon} alt="" className="w-12"/>
               </div>
               <div>
-                <h1 style={{ fontFamily: "Poppins, sans-serif " }}>{title}</h1>
-                <h2>{info}</h2>
+                <h1 style={{ fontFamily: "Poppins, sans-serif " }} className="text-xl">{title}</h1>
+                <h2 className="text-lg">{info}</h2>
               </div>
             </div>
           ))}
