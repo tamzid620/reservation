@@ -29,7 +29,7 @@ const Footer = () => {
     >
       <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-8 sm: mx-5">
         {/* = INFORMATION SECTION =-=================================================== */}
-        <div className="grid md:grid-cols-3 mb-8">
+        <div className="grid md:grid-cols-3 md:gap-0 sm: gap-20 mb-8">
           {/* ------------------ icon section ------------------ */}
           <div>
             <div className="relative flex items-center">
@@ -83,9 +83,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Email Adress"
-                className="relative bg-white text-black mt-5 w-[340px] px-5 py-5"
+                className="relative bg-white text-black mt-5 lg:w-[340px] md:w-[230px] sm: w-[340px] px-5 py-5"
               />
-              <button className="absolute top-9 right-14 bg-blue-950 hover:bg-blue-800 px-5 py-2">Send</button>
+              <button className="absolute top-8 lg:right-14 md:right-7 sm: right-3 bg-blue-950 hover:bg-blue-800 px-5 py-2">Send</button>
             </div>
           </div>
         </div>
