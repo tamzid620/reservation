@@ -1,0 +1,25 @@
+
+/* slick button  */
+.slick-prev,
+.slick-next {
+  /* border-radius: 50%;
+  text-align: center;
+  padding-top: 3px;
+  background-color: #25476a !important; */
+  visibility: hidden !important;
+}
+
+/* .slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+@media (max-width: 480px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+} */

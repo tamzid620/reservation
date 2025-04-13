@@ -4,6 +4,7 @@ import PopularDestination from "../../Shared/UserShared/PopularDestination/Popul
 import PopularTours from "../../Shared/UserShared/PopularTours/PopularTours";
 import TourCounter from "../../Shared/UserShared/TourCounter/TourCounter";
 import TourCountries from "../../Shared/UserShared/TourCountries/TourCountries";
+import TravelExperience from "../../Shared/UserShared/TravelExperience/TravelExperience";
 import VideoCompo from "../../Shared/UserShared/VideoCompo/VideoCompo";
 
 
@@ -17,6 +18,7 @@ const Home = () => {
            <PopularDestination/>
            <VideoCompo/>
            <TourCountries/>
+           <TravelExperience/>
         </div>
     );
 };

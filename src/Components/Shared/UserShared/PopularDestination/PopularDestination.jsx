@@ -124,7 +124,7 @@ const PopularDestination = () => {
             {sliderData.map(({ image, location, packages, tours }, index) => (
               <div
                 key={index}
-                className=" relative overflow-hidden shadow-lg group "
+                className=" relative overflow-hidden group"
               >
                 <img
                   src={image}

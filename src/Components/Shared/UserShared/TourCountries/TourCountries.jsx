@@ -140,7 +140,7 @@ const TourCountries = () => {
         </h2>
         {/* <<<<<<<<<<<<<<<<<<<< INFORMATION SECTION  >>>>>>>>>>>>>>>>>>>>>>>> */}
         <div >
-          <section className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 gap-10 items-center mt-10">
+          <section className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 gap-10 items-center mt-10">
             {/* text section   */}
             <div
               className="bg-contain bg-no-repeat bg-center p-8 w-full h-full flex items-center"
@@ -205,7 +205,7 @@ const TourCountries = () => {
           </section>
           <section className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 gap-10 items-center mt-32">
             {/* slider section  */}
-            <div>
+            <div className="">
             <Slider ref={sliderRef} {...settings}>
             {italyData.map(({ area, image }, index) => (
               <div
